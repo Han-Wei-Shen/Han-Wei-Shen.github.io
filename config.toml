@@ -44,6 +44,11 @@ pygmentsStyle = "native"
 
 # Make the tags and categories pages accessible directly from the navbar.
 [[menu.main]]
+    name = "Research"
+    url = "https://sites.google.com/view/gravity-research-group/research"
+    weight = 5
+
+[[menu.main]]
     name = "Publications"
     url = "https://sites.google.com/view/gravity-research-group/publications"
     weight = 20
