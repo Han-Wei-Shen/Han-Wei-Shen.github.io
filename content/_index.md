@@ -7,7 +7,7 @@ imgname:
   name: "img/hwshen_1.jpg"
   alt: "Picture of me"
   type: image/jpeg
-cvpath: "file/Shen_2023.pdf"
+cvpath: "file/Shen_2025.pdf"
 # More sources can be added (optional) using 
 # imgOther:
 #   - name: $IMAGE_PATH
