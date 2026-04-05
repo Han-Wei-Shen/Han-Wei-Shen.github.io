@@ -4,7 +4,7 @@
 name: "Han-Wei Shen"
 # Your profile picture
 imgname: 
-  name: "img/hwshen_1.jpg"
+  name: "img/hwshen_2026.jpg"
   alt: "Picture of me"
   type: image/jpeg
 cvpath: "file/Shen_2025.pdf"
