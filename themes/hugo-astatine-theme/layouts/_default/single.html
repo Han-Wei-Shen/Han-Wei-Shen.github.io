@@ -44,6 +44,12 @@
         {{ end }}
     {{ end }}
 
+    {{ if eq .Title "News" }}
+        {{ range .Params.news }}
+            {{ partial "news_list.html" . }}
+        {{ end }}
+    {{ end }}
+
     {{ partial "taxonomy.html" . }}
     {{ partial "references.html" . }}
     {{ if .Params.Lastmod }}
