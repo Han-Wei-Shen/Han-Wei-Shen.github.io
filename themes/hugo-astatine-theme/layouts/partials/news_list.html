@@ -13,7 +13,13 @@
         <div itemprop="date">{{ . }}</div>
         {{- end -}}
         {{ if and .name }}
-        <h4>{{ .name }}</h4>
+            <h4>
+            {{ if .link }}
+                <a href="{{ .link | safeURL }}">{{ .name }}</a>
+            {{ else }}
+                {{ .name }}
+            {{ end }}
+            </h4>
         {{ end }}
     </div>
 </div>
