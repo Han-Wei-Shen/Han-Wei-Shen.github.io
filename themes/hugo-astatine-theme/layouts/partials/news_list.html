@@ -2,17 +2,19 @@
             my-1.5 p-2.5 rounded bg-slate-100 dark:bg-slate-700 box-border
             leading-tight justify-around" id="{{anchorize .title}}"
      itemscope itemtype="http://schema.org/ScholarlyArticle">
+    {{ if .image }}
     <div class="pub-image basis-40 grow-0 shrink" itemprop="image"
          itemscope itemtype="http://schema.org/ImageObject">
-        <img alt="{{ .title }} Course Illustration"
+        <img alt="{{ .name }}"
              itemprop="url" src="{{ .image }}"
              class="w-full"/>
     </div>
-    <div class="grow my-1.5 mx-2" style="margin-top: 1.5rem;">
+    {{ end }}
+    <div class="grow my-1.5 mx-2" style="flex-basis: 0; min-width: 0;">
         {{- with .date -}}
         <div itemprop="date">{{ . }}</div>
         {{- end -}}
-        {{ if and .name }}
+        {{ if .name }}
             <h4>
             {{ if .link }}
                 <a href="{{ .link | safeURL }}">{{ .name }}</a>
